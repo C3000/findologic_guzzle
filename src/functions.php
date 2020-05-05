@@ -1,10 +1,10 @@
 <?php
 namespace FINDOLOGIC\GuzzleHttp;
 
-use GuzzleHttp\Handler\CurlHandler;
-use GuzzleHttp\Handler\CurlMultiHandler;
-use GuzzleHttp\Handler\Proxy;
-use GuzzleHttp\Handler\StreamHandler;
+use FINDOLOGIC\GuzzleHttp\Handler\CurlHandler;
+use FINDOLOGIC\GuzzleHttp\Handler\CurlMultiHandler;
+use FINDOLOGIC\GuzzleHttp\Handler\Proxy;
+use FINDOLOGIC\GuzzleHttp\Handler\StreamHandler;
 
 /**
  * Expands a URI template
