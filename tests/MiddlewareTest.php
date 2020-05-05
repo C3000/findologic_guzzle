@@ -1,13 +1,13 @@
 <?php
-namespace GuzzleHttp\Tests;
+namespace FINDOLOGIC\GuzzleHttp\Tests;
 
-use GuzzleHttp\Cookie\CookieJar;
-use GuzzleHttp\Cookie\SetCookie;
-use GuzzleHttp\Exception\RequestException;
-use GuzzleHttp\Handler\MockHandler;
-use GuzzleHttp\HandlerStack;
-use GuzzleHttp\MessageFormatter;
-use GuzzleHttp\Middleware;
+use FINDOLOGIC\GuzzleHttp\Cookie\CookieJar;
+use FINDOLOGIC\GuzzleHttp\Cookie\SetCookie;
+use FINDOLOGIC\GuzzleHttp\Exception\RequestException;
+use FINDOLOGIC\GuzzleHttp\Handler\MockHandler;
+use FINDOLOGIC\GuzzleHttp\HandlerStack;
+use FINDOLOGIC\GuzzleHttp\MessageFormatter;
+use FINDOLOGIC\GuzzleHttp\Middleware;
 use GuzzleHttp\Promise\PromiseInterface;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
@@ -41,7 +41,7 @@ class MiddlewareTest extends TestCase
     }
 
     /**
-     * @expectedException \GuzzleHttp\Exception\ClientException
+     * @expectedException \FINDOLOGIC\GuzzleHttp\Exception\ClientException
      */
     public function testThrowsExceptionOnHttpClientError()
     {
@@ -55,7 +55,7 @@ class MiddlewareTest extends TestCase
     }
 
     /**
-     * @expectedException \GuzzleHttp\Exception\ServerException
+     * @expectedException \FINDOLOGIC\GuzzleHttp\Exception\ServerException
      */
     public function testThrowsExceptionOnHttpServerError()
     {

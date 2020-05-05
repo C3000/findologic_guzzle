@@ -1,11 +1,11 @@
 <?php
-namespace GuzzleHttp\Tests\CookieJar;
+namespace FINDOLOGIC\GuzzleHttp\Tests\CookieJar;
 
 use DateInterval;
 use DateTime;
 use DateTimeImmutable;
-use GuzzleHttp\Cookie\CookieJar;
-use GuzzleHttp\Cookie\SetCookie;
+use FINDOLOGIC\GuzzleHttp\Cookie\CookieJar;
+use FINDOLOGIC\GuzzleHttp\Cookie\SetCookie;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
 use PHPUnit\Framework\TestCase;

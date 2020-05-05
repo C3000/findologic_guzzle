@@ -247,16 +247,16 @@ cookies
 
 :Summary: Specifies whether or not cookies are used in a request or what cookie
         jar to use or what cookies to send.
-:Types: ``GuzzleHttp\Cookie\CookieJarInterface``
+:Types: ``FINDOLOGIC\GuzzleHttp\Cookie\CookieJarInterface``
 :Default: None
 :Constant: ``GuzzleHttp\RequestOptions::COOKIES``
 
 You must specify the cookies option as a
-``GuzzleHttp\Cookie\CookieJarInterface`` or ``false``.
+``FINDOLOGIC\GuzzleHttp\Cookie\CookieJarInterface`` or ``false``.
 
 .. code-block:: php
 
-    $jar = new \GuzzleHttp\Cookie\CookieJar();
+    $jar = new \FINDOLOGIC\GuzzleHttp\Cookie\CookieJar();
     $client->request('GET', '/get', ['cookies' => $jar]);
 
 .. warning::
@@ -539,7 +539,7 @@ http_errors
 .. code-block:: php
 
     $client->request('GET', '/status/500');
-    // Throws a GuzzleHttp\Exception\ServerException
+    // Throws a FINDOLOGIC\GuzzleHttp\Exception\ServerException
 
     $res = $client->request('GET', '/status/500', ['http_errors' => false]);
     echo $res->getStatusCode();
@@ -686,7 +686,7 @@ on_headers
 
 The callable accepts a ``Psr\Http\ResponseInterface`` object. If an exception
 is thrown by the callable, then the promise associated with the response will
-be rejected with a ``GuzzleHttp\Exception\RequestException`` that wraps the
+be rejected with a ``FINDOLOGIC\GuzzleHttp\Exception\RequestException`` that wraps the
 exception that was thrown.
 
 You may need to know what headers and status codes were received before data
@@ -1066,7 +1066,7 @@ timeout
 
     // Timeout if a server does not return a response in 3.14 seconds.
     $client->request('GET', '/delay/5', ['timeout' => 3.14]);
-    // PHP Fatal error:  Uncaught exception 'GuzzleHttp\Exception\RequestException'
+    // PHP Fatal error:  Uncaught exception 'FINDOLOGIC\GuzzleHttp\Exception\RequestException'
 
 
 .. _version-option:

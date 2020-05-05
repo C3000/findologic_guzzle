@@ -1,9 +1,9 @@
 <?php
-namespace GuzzleHttp\Test\Handler;
+namespace FINDOLOGIC\GuzzleHttp\Test\Handler;
 
-use GuzzleHttp\Handler;
-use GuzzleHttp\Handler\CurlFactory;
-use GuzzleHttp\Handler\EasyHandle;
+use FINDOLOGIC\GuzzleHttp\Handler;
+use FINDOLOGIC\GuzzleHttp\Handler\CurlFactory;
+use FINDOLOGIC\GuzzleHttp\Handler\EasyHandle;
 use GuzzleHttp\Psr7;
 use GuzzleHttp\Tests\Server;
 use GuzzleHttp\TransferStats;
@@ -11,7 +11,7 @@ use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\ResponseInterface;
 
 /**
- * @covers \GuzzleHttp\Handler\CurlFactory
+ * @covers \FINDOLOGIC\GuzzleHttp\Handler\CurlFactory
  */
 class CurlFactoryTest extends TestCase
 {
@@ -448,7 +448,7 @@ class CurlFactoryTest extends TestCase
     }
 
     /**
-     * @expectedException \GuzzleHttp\Exception\RequestException
+     * @expectedException \FINDOLOGIC\GuzzleHttp\Exception\RequestException
      * @expectedExceptionMessage but attempting to rewind the request body failed
      */
     public function testFailsWhenCannotRewindRetryAfterNoResponse()
@@ -494,7 +494,7 @@ class CurlFactoryTest extends TestCase
     }
 
     /**
-     * @expectedException \GuzzleHttp\Exception\RequestException
+     * @expectedException \FINDOLOGIC\GuzzleHttp\Exception\RequestException
      * @expectedExceptionMessage The cURL request was retried 3 times
      */
     public function testFailsWhenRetryMoreThanThreeTimes()
@@ -532,7 +532,7 @@ class CurlFactoryTest extends TestCase
     }
 
     /**
-     * @expectedException \GuzzleHttp\Exception\ConnectException
+     * @expectedException \FINDOLOGIC\GuzzleHttp\Exception\ConnectException
      */
     public function testCreatesConnectException()
     {
@@ -622,7 +622,7 @@ class CurlFactoryTest extends TestCase
     }
 
     /**
-     * @expectedException \GuzzleHttp\Exception\RequestException
+     * @expectedException \FINDOLOGIC\GuzzleHttp\Exception\RequestException
      * @expectedExceptionMessage An error was encountered during the on_headers event
      * @expectedExceptionMessage test
      */

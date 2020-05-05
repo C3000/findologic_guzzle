@@ -1,8 +1,8 @@
 <?php
-namespace GuzzleHttp;
+namespace FINDOLOGIC\GuzzleHttp;
 
-use GuzzleHttp\Cookie\CookieJar;
-use GuzzleHttp\Exception\InvalidArgumentException;
+use FINDOLOGIC\GuzzleHttp\Cookie\CookieJar;
+use FINDOLOGIC\GuzzleHttp\Exception\InvalidArgumentException;
 use GuzzleHttp\Promise;
 use GuzzleHttp\Psr7;
 use Psr\Http\Message\RequestInterface;

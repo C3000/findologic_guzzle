@@ -1,17 +1,17 @@
 <?php
-namespace GuzzleHttp\Tests;
+namespace FINDOLOGIC\GuzzleHttp\Tests;
 
-use GuzzleHttp\Client;
-use GuzzleHttp\Cookie\CookieJar;
-use GuzzleHttp\Handler\MockHandler;
-use GuzzleHttp\HandlerStack;
-use GuzzleHttp\Middleware;
+use FINDOLOGIC\GuzzleHttp\Cookie\CookieJar;
+use FINDOLOGIC\GuzzleHttp\Handler\MockHandler;
+use FINDOLOGIC\GuzzleHttp\Client;
+use FINDOLOGIC\GuzzleHttp\HandlerStack;
+use FINDOLOGIC\GuzzleHttp\Middleware;
 use GuzzleHttp\Promise\PromiseInterface;
 use GuzzleHttp\Psr7;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
 use GuzzleHttp\Psr7\Uri;
-use GuzzleHttp\RequestOptions;
+use FINDOLOGIC\GuzzleHttp\RequestOptions;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\ResponseInterface;
 
@@ -219,7 +219,7 @@ class ClientTest extends TestCase
     }
 
     /**
-     * @expectedException \GuzzleHttp\Exception\ClientException
+     * @expectedException \FINDOLOGIC\GuzzleHttp\Exception\ClientException
      */
     public function testThrowsHttpErrorsByDefault()
     {
@@ -231,7 +231,7 @@ class ClientTest extends TestCase
 
     /**
      * @expectedException \InvalidArgumentException
-     * @expectedExceptionMessage cookies must be an instance of GuzzleHttp\Cookie\CookieJarInterface
+     * @expectedExceptionMessage cookies must be an instance of FINDOLOGIC\GuzzleHttp\Cookie\CookieJarInterface
      */
     public function testValidatesCookies()
     {
@@ -751,7 +751,7 @@ class ClientTest extends TestCase
     }
 
     /**
-     * @expectedException \GuzzleHttp\Exception\InvalidArgumentException
+     * @expectedException \FINDOLOGIC\GuzzleHttp\Exception\InvalidArgumentException
      * @expectedExceptionMessage IDN conversion failed (errors: IDNA_ERROR_LEADING_HYPHEN)
      */
     public function testExceptionOnInvalidIdn()

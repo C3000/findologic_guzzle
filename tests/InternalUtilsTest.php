@@ -1,8 +1,8 @@
 <?php
-namespace GuzzleHttp\Test;
+namespace FINDOLOGIC\GuzzleHttp\Test;
 
 use GuzzleHttp\Psr7;
-use GuzzleHttp\Utils;
+use FINDOLOGIC\GuzzleHttp\Utils;
 use PHPUnit\Framework\TestCase;
 
 class InternalUtilsTest extends TestCase

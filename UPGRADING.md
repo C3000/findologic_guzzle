@@ -50,7 +50,7 @@ functions that wrap handlers (or are injected into a
   system based on PSR-7, using RingPHP and it's middleware system as well adds
   more complexity than the benefits it provides. All HTTP handlers that were
   present in RingPHP have been modified to work directly with PSR-7 messages
-  and placed in the `GuzzleHttp\Handler` namespace. This significantly reduces
+  and placed in the `FINDOLOGIC\GuzzleHttp\Handler` namespace. This significantly reduces
   complexity in Guzzle, removes a dependency, and improves performance. RingPHP
   will be maintained for Guzzle 5 support, but will no longer be a part of
   Guzzle 6.
@@ -70,7 +70,7 @@ functions that wrap handlers (or are injected into a
   - `GuzzleHttp\Subscriber\History` is now provided by
     `GuzzleHttp\Middleware::history`
   - `GuzzleHttp\Subscriber\Mock` is now provided by
-    `GuzzleHttp\Handler\MockHandler`
+    `FINDOLOGIC\GuzzleHttp\Handler\MockHandler`
   - `GuzzleHttp\Subscriber\Prepare` is now provided by
     `GuzzleHttp\PrepareBodyMiddleware`
   - `GuzzleHttp\Subscriber\Redirect` is now provided by
@@ -174,7 +174,7 @@ from the following classes:
 - `GuzzleHttp\Url`
 - `GuzzleHttp\Query`
 - `GuzzleHttp\Post\PostBody`
-- `GuzzleHttp\Cookie\SetCookie`
+- `FINDOLOGIC\GuzzleHttp\Cookie\SetCookie`
 
 ## Removed functions.php
 
@@ -324,8 +324,8 @@ $request->getEmitter()->on('foo', function (Event $event, $name) { /* ... */ } )
   functions.
 - `GuzzleHttp\StaticClient` has been removed. Use the functions provided in
   `functions.php` for an easy to use static client instance.
-- Exceptions in `GuzzleHttp\Exception` have been updated to all extend from
-  `GuzzleHttp\Exception\TransferException`.
+- Exceptions in `FINDOLOGIC\GuzzleHttp\Exception` have been updated to all extend from
+  `FINDOLOGIC\GuzzleHttp\Exception\TransferException`.
 
 ### Client
 
@@ -561,7 +561,7 @@ templates, and URLs; however, this level of complexity is not needed in Guzzle
 so it has been removed.
 
 - Cookie: Cookie parsing logic has been moved to
-  `GuzzleHttp\Cookie\SetCookie::fromString`.
+  `FINDOLOGIC\GuzzleHttp\Cookie\SetCookie::fromString`.
 - Message: Message parsing logic for both requests and responses has been moved
   to `GuzzleHttp\Message\MessageFactory::fromMessage`. Message parsing is only
   used in debugging or deserializing messages, so it doesn't make sense for
@@ -579,7 +579,7 @@ The `Guzzle\Plugin` namespace has been renamed to `GuzzleHttp\Subscriber`.
 Several plugins are shipping with the core Guzzle library under this namespace.
 
 - `GuzzleHttp\Subscriber\Cookie`: Replaces the old CookiePlugin. Cookie jar
-  code has moved to `GuzzleHttp\Cookie`.
+  code has moved to `FINDOLOGIC\GuzzleHttp\Cookie`.
 - `GuzzleHttp\Subscriber\History`: Replaces the old HistoryPlugin.
 - `GuzzleHttp\Subscriber\HttpError`: Throws errors when a bad HTTP response is
   received.

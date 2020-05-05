@@ -1,8 +1,8 @@
 <?php
-namespace GuzzleHttp\Test\Handler;
+namespace FINDOLOGIC\GuzzleHttp\Test\Handler;
 
-use GuzzleHttp\Exception\ConnectException;
-use GuzzleHttp\Handler\CurlHandler;
+use FINDOLOGIC\GuzzleHttp\Exception\ConnectException;
+use FINDOLOGIC\GuzzleHttp\Handler\CurlHandler;
 use GuzzleHttp\Psr7;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
@@ -11,7 +11,7 @@ use GuzzleHttp\Utils;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers \GuzzleHttp\Handler\CurlHandler
+ * @covers \FINDOLOGIC\GuzzleHttp\Handler\CurlHandler
  */
 class CurlHandlerTest extends TestCase
 {
@@ -21,7 +21,7 @@ class CurlHandlerTest extends TestCase
     }
 
     /**
-     * @expectedException \GuzzleHttp\Exception\ConnectException
+     * @expectedException \FINDOLOGIC\GuzzleHttp\Exception\ConnectException
      * @expectedExceptionMessage cURL
      */
     public function testCreatesCurlErrors()

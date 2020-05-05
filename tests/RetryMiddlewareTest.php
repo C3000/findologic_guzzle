@@ -1,13 +1,12 @@
 <?php
-namespace GuzzleHttp\Tests;
+namespace FINDOLOGIC\GuzzleHttp\Tests;
 
-use GuzzleHttp\Client;
-use GuzzleHttp\Handler\MockHandler;
-use GuzzleHttp\Middleware;
-use GuzzleHttp\Psr7;
+use FINDOLOGIC\GuzzleHttp\Handler\MockHandler;
+use FINDOLOGIC\GuzzleHttp\Client;
+use FINDOLOGIC\GuzzleHttp\Middleware;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
-use GuzzleHttp\RetryMiddleware;
+use FINDOLOGIC\GuzzleHttp\RetryMiddleware;
 use PHPUnit\Framework\TestCase;
 
 class RetryMiddlewareTest extends TestCase

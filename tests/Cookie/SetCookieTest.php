@@ -1,7 +1,7 @@
 <?php
-namespace GuzzleHttp\Tests\CookieJar;
+namespace FINDOLOGIC\GuzzleHttp\Tests\CookieJar;
 
-use GuzzleHttp\Cookie\SetCookie;
+use FINDOLOGIC\GuzzleHttp\Cookie\SetCookie;
 use PHPUnit\Framework\TestCase;
 
 /**

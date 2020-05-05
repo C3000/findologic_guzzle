@@ -1,12 +1,12 @@
 <?php
-namespace GuzzleHttp\Tests\Exception;
+namespace FINDOLOGIC\GuzzleHttp\Tests\Exception;
 
-use GuzzleHttp\Exception\ConnectException;
+use FINDOLOGIC\GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Psr7\Request;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers \GuzzleHttp\Exception\ConnectException
+ * @covers \FINDOLOGIC\GuzzleHttp\Exception\ConnectException
  */
 class ConnectExceptionTest extends TestCase
 {

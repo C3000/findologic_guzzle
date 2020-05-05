@@ -1,7 +1,7 @@
 <?php
-namespace GuzzleHttp\Test\Handler;
+namespace FINDOLOGIC\GuzzleHttp\Test\Handler;
 
-use GuzzleHttp\Handler\MockHandler;
+use FINDOLOGIC\GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\Promise\PromiseInterface;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
@@ -9,7 +9,7 @@ use GuzzleHttp\TransferStats;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers \GuzzleHttp\Handler\MockHandler
+ * @covers \FINDOLOGIC\GuzzleHttp\Handler\MockHandler
  */
 class MockHandlerTest extends TestCase
 {
@@ -134,7 +134,7 @@ class MockHandlerTest extends TestCase
     }
 
     /**
-     * @expectedException \GuzzleHttp\Exception\RequestException
+     * @expectedException \FINDOLOGIC\GuzzleHttp\Exception\RequestException
      * @expectedExceptionMessage An error was encountered during the on_headers event
      * @expectedExceptionMessage test
      */
@@ -185,7 +185,7 @@ class MockHandlerTest extends TestCase
     }
 
     /**
-     * @expectedException \GuzzleHttp\Exception\BadResponseException
+     * @expectedException \FINDOLOGIC\GuzzleHttp\Exception\BadResponseException
      */
     public function testCanCreateWithDefaultMiddleware()
     {

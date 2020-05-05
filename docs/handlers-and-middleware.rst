@@ -23,7 +23,7 @@ default middlewares by wrapping the handler in the
 
     use GuzzleHttp\Client;
     use GuzzleHttp\HandlerStack;
-    use GuzzleHttp\Handler\CurlHandler;
+    use FINDOLOGIC\GuzzleHttp\Handler\CurlHandler;
 
     $handler = new CurlHandler();
     $stack = HandlerStack::create($handler); // Wrap w/ middleware
@@ -116,7 +116,7 @@ wrapping the handler used by the client or by decorating a handler stack.
 .. code-block:: php
 
     use GuzzleHttp\HandlerStack;
-    use GuzzleHttp\Handler\CurlHandler;
+    use FINDOLOGIC\GuzzleHttp\Handler\CurlHandler;
     use GuzzleHttp\Client;
 
     $stack = new HandlerStack();
@@ -135,7 +135,7 @@ downstream handler. This example adds a header to the response.
     use Psr\Http\Message\RequestInterface;
     use Psr\Http\Message\ResponseInterface;
     use GuzzleHttp\HandlerStack;
-    use GuzzleHttp\Handler\CurlHandler;
+    use FINDOLOGIC\GuzzleHttp\Handler\CurlHandler;
     use GuzzleHttp\Client;
 
     function add_response_header($header, $value)
@@ -168,7 +168,7 @@ a function that takes the request argument and returns the request to send.
 
     use Psr\Http\Message\RequestInterface;
     use GuzzleHttp\HandlerStack;
-    use GuzzleHttp\Handler\CurlHandler;
+    use FINDOLOGIC\GuzzleHttp\Handler\CurlHandler;
     use GuzzleHttp\Client;
     use GuzzleHttp\Middleware;
 
@@ -188,7 +188,7 @@ Modifying a response is also much simpler using the
 
     use Psr\Http\Message\ResponseInterface;
     use GuzzleHttp\HandlerStack;
-    use GuzzleHttp\Handler\CurlHandler;
+    use FINDOLOGIC\GuzzleHttp\Handler\CurlHandler;
     use GuzzleHttp\Client;
     use GuzzleHttp\Middleware;
 

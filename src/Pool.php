@@ -1,5 +1,5 @@
 <?php
-namespace GuzzleHttp;
+namespace FINDOLOGIC\GuzzleHttp;
 
 use GuzzleHttp\Promise\EachPromise;
 use GuzzleHttp\Promise\PromiseInterface;

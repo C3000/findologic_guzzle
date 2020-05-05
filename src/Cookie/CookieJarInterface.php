@@ -1,5 +1,5 @@
 <?php
-namespace GuzzleHttp\Cookie;
+namespace FINDOLOGIC\GuzzleHttp\Cookie;
 
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;

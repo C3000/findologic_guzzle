@@ -1,9 +1,9 @@
 <?php
-namespace GuzzleHttp\Tests;
+namespace FINDOLOGIC\GuzzleHttp\Tests;
 
-use GuzzleHttp\Cookie\CookieJar;
-use GuzzleHttp\Handler\MockHandler;
-use GuzzleHttp\HandlerStack;
+use FINDOLOGIC\GuzzleHttp\Cookie\CookieJar;
+use FINDOLOGIC\GuzzleHttp\Handler\MockHandler;
+use FINDOLOGIC\GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
 use PHPUnit\Framework\TestCase;

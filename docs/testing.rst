@@ -24,11 +24,11 @@ a response or exception by shifting return values off of a queue.
 .. code-block:: php
 
     use GuzzleHttp\Client;
-    use GuzzleHttp\Handler\MockHandler;
+    use FINDOLOGIC\GuzzleHttp\Handler\MockHandler;
     use GuzzleHttp\HandlerStack;
     use GuzzleHttp\Psr7\Response;
     use GuzzleHttp\Psr7\Request;
-    use GuzzleHttp\Exception\RequestException;
+    use FINDOLOGIC\GuzzleHttp\Exception\RequestException;
 
     // Create a mock and queue two responses.
     $mock = new MockHandler([

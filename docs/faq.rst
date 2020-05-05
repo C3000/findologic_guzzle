@@ -73,7 +73,7 @@ additional options can be specified as an associative array in the
 
     use \GuzzleHttp\Client;
     use \GuzzleHttp\HandlerStack;
-    use \GuzzleHttp\Handler\CurlMultiHandler;
+    use \FINDOLOGIC\GuzzleHttp\Handler\CurlMultiHandler;
 
     $client = new Client(['handler' => HandlerStack::create(new CurlMultiHandler([
         'options' => [

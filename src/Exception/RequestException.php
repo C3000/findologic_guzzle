@@ -1,5 +1,5 @@
 <?php
-namespace GuzzleHttp\Exception;
+namespace FINDOLOGIC\GuzzleHttp\Exception;
 
 use GuzzleHttp\Promise\PromiseInterface;
 use Psr\Http\Message\RequestInterface;

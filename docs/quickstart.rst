@@ -149,7 +149,7 @@ rejected with an exception.
 .. code-block:: php
 
     use Psr\Http\Message\ResponseInterface;
-    use GuzzleHttp\Exception\RequestException;
+    use FINDOLOGIC\GuzzleHttp\Exception\RequestException;
 
     $promise = $client->requestAsync('GET', 'http://httpbin.org/get');
     $promise->then(
@@ -201,7 +201,7 @@ amount of requests you wish to send.
 .. code-block:: php
 
     use GuzzleHttp\Client;
-    use GuzzleHttp\Exception\RequestException;
+    use FINDOLOGIC\GuzzleHttp\Exception\RequestException;
     use GuzzleHttp\Pool;
     use GuzzleHttp\Psr7\Request;
     use GuzzleHttp\Psr7\Response;
@@ -429,12 +429,12 @@ Cookies
 
 Guzzle can maintain a cookie session for you if instructed using the
 ``cookies`` request option. When sending a request, the ``cookies`` option
-must be set to an instance of ``GuzzleHttp\Cookie\CookieJarInterface``.
+must be set to an instance of ``FINDOLOGIC\GuzzleHttp\Cookie\CookieJarInterface``.
 
 .. code-block:: php
 
     // Use a specific cookie jar
-    $jar = new \GuzzleHttp\Cookie\CookieJar;
+    $jar = new \FINDOLOGIC\GuzzleHttp\Cookie\CookieJar;
     $r = $client->request('GET', 'http://httpbin.org/cookies', [
         'cookies' => $jar
     ]);
@@ -448,13 +448,13 @@ to use a shared cookie jar for all requests.
     $client = new \GuzzleHttp\Client(['cookies' => true]);
     $r = $client->request('GET', 'http://httpbin.org/cookies');
 
-Different implementations exist for the ``GuzzleHttp\Cookie\CookieJarInterface``
+Different implementations exist for the ``FINDOLOGIC\GuzzleHttp\Cookie\CookieJarInterface``
 :
 
-- The ``GuzzleHttp\Cookie\CookieJar`` class stores cookies as an array.
-- The ``GuzzleHttp\Cookie\FileCookieJar`` class persists non-session cookies
+- The ``FINDOLOGIC\GuzzleHttp\Cookie\CookieJar`` class stores cookies as an array.
+- The ``FINDOLOGIC\GuzzleHttp\Cookie\FileCookieJar`` class persists non-session cookies
   using a JSON formatted file.
-- The ``GuzzleHttp\Cookie\SessionCookieJar`` class persists cookies in the
+- The ``FINDOLOGIC\GuzzleHttp\Cookie\SessionCookieJar`` class persists cookies in the
   client session.
 
 You can manually set cookies into a cookie jar with the named constructor
@@ -462,7 +462,7 @@ You can manually set cookies into a cookie jar with the named constructor
 
 .. code-block:: php
 
-    $jar = \GuzzleHttp\Cookie\CookieJar::fromArray(
+    $jar = \FINDOLOGIC\GuzzleHttp\Cookie\CookieJar::fromArray(
         [
             'some_cookie' => 'foo',
             'other_cookie' => 'barbaz1234'
@@ -471,7 +471,7 @@ You can manually set cookies into a cookie jar with the named constructor
     );
 
 You can get a cookie by its name with the ``getCookieByName($name)`` method
-which returns a ``GuzzleHttp\Cookie\SetCookie`` instance.
+which returns a ``FINDOLOGIC\GuzzleHttp\Cookie\SetCookie`` instance.
 
 .. code-block:: php
 
@@ -482,7 +482,7 @@ which returns a ``GuzzleHttp\Cookie\SetCookie`` instance.
     $cookie->getExpires(); // expiration date as a Unix timestamp
 
 The cookies can be also fetched into an array thanks to the `toArray()` method.
-The ``GuzzleHttp\Cookie\CookieJarInterface`` interface extends
+The ``FINDOLOGIC\GuzzleHttp\Cookie\CookieJarInterface`` interface extends
 ``Traversable`` so it can be iterated in a foreach loop.
 
 
@@ -541,15 +541,15 @@ on each other.
 Guzzle throws exceptions for errors that occur during a transfer.
 
 - In the event of a networking error (connection timeout, DNS errors, etc.),
-  a ``GuzzleHttp\Exception\RequestException`` is thrown. This exception
-  extends from ``GuzzleHttp\Exception\TransferException``. Catching this
+  a ``FINDOLOGIC\GuzzleHttp\Exception\RequestException`` is thrown. This exception
+  extends from ``FINDOLOGIC\GuzzleHttp\Exception\TransferException``. Catching this
   exception will catch any exception that can be thrown while transferring
   requests.
 
   .. code-block:: php
 
       use GuzzleHttp\Psr7;
-      use GuzzleHttp\Exception\RequestException;
+      use FINDOLOGIC\GuzzleHttp\Exception\RequestException;
 
       try {
           $client->request('GET', 'https://github.com/_abc_123_404');
@@ -560,20 +560,20 @@ Guzzle throws exceptions for errors that occur during a transfer.
           }
       }
 
-- A ``GuzzleHttp\Exception\ConnectException`` exception is thrown in the
+- A ``FINDOLOGIC\GuzzleHttp\Exception\ConnectException`` exception is thrown in the
   event of a networking error. This exception extends from
-  ``GuzzleHttp\Exception\RequestException``.
+  ``FINDOLOGIC\GuzzleHttp\Exception\RequestException``.
 
-- A ``GuzzleHttp\Exception\ClientException`` is thrown for 400
+- A ``FINDOLOGIC\GuzzleHttp\Exception\ClientException`` is thrown for 400
   level errors if the ``http_errors`` request option is set to true. This
-  exception extends from ``GuzzleHttp\Exception\BadResponseException`` and
-  ``GuzzleHttp\Exception\BadResponseException`` extends from
-  ``GuzzleHttp\Exception\RequestException``.
+  exception extends from ``FINDOLOGIC\GuzzleHttp\Exception\BadResponseException`` and
+  ``FINDOLOGIC\GuzzleHttp\Exception\BadResponseException`` extends from
+  ``FINDOLOGIC\GuzzleHttp\Exception\RequestException``.
 
   .. code-block:: php
 
       use GuzzleHttp\Psr7;
-      use GuzzleHttp\Exception\ClientException;
+      use FINDOLOGIC\GuzzleHttp\Exception\ClientException;
 
       try {
           $client->request('GET', 'https://github.com/_abc_123_404');
@@ -582,15 +582,15 @@ Guzzle throws exceptions for errors that occur during a transfer.
           echo Psr7\str($e->getResponse());
       }
 
-- A ``GuzzleHttp\Exception\ServerException`` is thrown for 500 level
+- A ``FINDOLOGIC\GuzzleHttp\Exception\ServerException`` is thrown for 500 level
   errors if the ``http_errors`` request option is set to true. This
-  exception extends from ``GuzzleHttp\Exception\BadResponseException``.
+  exception extends from ``FINDOLOGIC\GuzzleHttp\Exception\BadResponseException``.
 
-- A ``GuzzleHttp\Exception\TooManyRedirectsException`` is thrown when too
-  many redirects are followed. This exception extends from ``GuzzleHttp\Exception\RequestException``.
+- A ``FINDOLOGIC\GuzzleHttp\Exception\TooManyRedirectsException`` is thrown when too
+  many redirects are followed. This exception extends from ``FINDOLOGIC\GuzzleHttp\Exception\RequestException``.
 
 All of the above exceptions extend from
-``GuzzleHttp\Exception\TransferException``.
+``FINDOLOGIC\GuzzleHttp\Exception\TransferException``.
 
 
 Environment Variables

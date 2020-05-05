@@ -1,8 +1,8 @@
 <?php
-namespace GuzzleHttp\Tests;
+namespace FINDOLOGIC\GuzzleHttp\Tests;
 
 use GuzzleHttp\Psr7;
-use GuzzleHttp\TransferStats;
+use FINDOLOGIC\GuzzleHttp\TransferStats;
 use PHPUnit\Framework\TestCase;
 
 class TransferStatsTest extends TestCase

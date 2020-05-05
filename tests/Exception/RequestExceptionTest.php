@@ -1,14 +1,14 @@
 <?php
-namespace GuzzleHttp\Tests\Exception;
+namespace FINDOLOGIC\GuzzleHttp\Tests\Exception;
 
-use GuzzleHttp\Exception\RequestException;
+use FINDOLOGIC\GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
 use GuzzleHttp\Psr7\Stream;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers \GuzzleHttp\Exception\RequestException
+ * @covers \FINDOLOGIC\GuzzleHttp\Exception\RequestException
  */
 class RequestExceptionTest extends TestCase
 {
@@ -41,7 +41,7 @@ class RequestExceptionTest extends TestCase
             '400 Bad Request',
             $e->getMessage()
         );
-        self::assertInstanceOf('GuzzleHttp\Exception\ClientException', $e);
+        self::assertInstanceOf('FINDOLOGIC\GuzzleHttp\Exception\ClientException', $e);
     }
 
     public function testCreatesServerErrorResponseException()

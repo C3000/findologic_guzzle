@@ -1,8 +1,8 @@
 <?php
-namespace GuzzleHttp;
+namespace FINDOLOGIC\GuzzleHttp;
 
-use GuzzleHttp\Exception\BadResponseException;
-use GuzzleHttp\Exception\TooManyRedirectsException;
+use FINDOLOGIC\GuzzleHttp\Exception\BadResponseException;
+use FINDOLOGIC\GuzzleHttp\Exception\TooManyRedirectsException;
 use GuzzleHttp\Promise\PromiseInterface;
 use GuzzleHttp\Psr7;
 use Psr\Http\Message\RequestInterface;

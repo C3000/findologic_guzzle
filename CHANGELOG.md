@@ -33,7 +33,7 @@
 * Improvement: Improved error messages when using curl < 7.21.2 [#2108](https://github.com/guzzle/guzzle/pull/2108)
 * Fix: Test if response is readable before returning a summary in `RequestException::getResponseBodySummary()` [#2081](https://github.com/guzzle/guzzle/pull/2081)
 * Fix: Add support for GUZZLE_CURL_SELECT_TIMEOUT environment variable [#2161](https://github.com/guzzle/guzzle/pull/2161)
-* Improvement: Added `GuzzleHttp\Exception\InvalidArgumentException` [#2163](https://github.com/guzzle/guzzle/pull/2163)
+* Improvement: Added `FINDOLOGIC\GuzzleHttp\Exception\InvalidArgumentException` [#2163](https://github.com/guzzle/guzzle/pull/2163)
 * Improvement: Added `GuzzleHttp\_current_time()` to use `hrtime()` if that function exists. [#2242](https://github.com/guzzle/guzzle/pull/2242)
 * Improvement: Added curl's `appconnect_time` in `TransferStats` [#2284](https://github.com/guzzle/guzzle/pull/2284)
 * Improvement: Make GuzzleException extend Throwable wherever it's available [#2273](https://github.com/guzzle/guzzle/pull/2273)
@@ -248,7 +248,7 @@
     in Guzzle, operating on PSR-7 messages.
   * Retry logic is now encapsulated in `GuzzleHttp\Middleware::retry`, which
     means the `guzzlehttp/retry-subscriber` is now obsolete.
-  * Mocking responses is now handled using `GuzzleHttp\Handler\MockHandler`.
+  * Mocking responses is now handled using `FINDOLOGIC\GuzzleHttp\Handler\MockHandler`.
 * Asynchronous responses
   * No longer supports the `future` request option to send an async request.
     Instead, use one of the `*Async` methods of a client (e.g., `requestAsync`,
@@ -388,7 +388,7 @@ interfaces.
 * Removed the fluent interfaces (i.e., `return $this`) from requests,
   responses, `GuzzleHttp\Collection`, `GuzzleHttp\Url`,
   `GuzzleHttp\Query`, `GuzzleHttp\Post\PostBody`, and
-  `GuzzleHttp\Cookie\SetCookie`. This blog post provides a good outline of
+  `FINDOLOGIC\GuzzleHttp\Cookie\SetCookie`. This blog post provides a good outline of
   why I did this: http://ocramius.github.io/blog/fluent-interfaces-are-evil/.
   This also makes the Guzzle message interfaces compatible with the current
   PSR-7 message proposal.
@@ -543,7 +543,7 @@ interfaces.
 * Fixed an issue related to using custom message factory options in subclasses
 * Fixed an issue with nested form fields in a multi-part POST
 * Fixed an issue with using the `json` request option for POST requests
-* Added `ToArrayInterface` to `GuzzleHttp\Cookie\CookieJar`
+* Added `ToArrayInterface` to `FINDOLOGIC\GuzzleHttp\Cookie\CookieJar`
 
 ## 4.1.0 - 2014-05-27
 

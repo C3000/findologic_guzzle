@@ -1,18 +1,18 @@
 <?php
-namespace GuzzleHttp\Tests;
+namespace FINDOLOGIC\GuzzleHttp\Tests;
 
-use GuzzleHttp\Client;
-use GuzzleHttp\Handler\MockHandler;
-use GuzzleHttp\HandlerStack;
-use GuzzleHttp\Middleware;
+use FINDOLOGIC\GuzzleHttp\Handler\MockHandler;
+use FINDOLOGIC\GuzzleHttp\Client;
+use FINDOLOGIC\GuzzleHttp\HandlerStack;
+use FINDOLOGIC\GuzzleHttp\Middleware;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
-use GuzzleHttp\RedirectMiddleware;
+use FINDOLOGIC\GuzzleHttp\RedirectMiddleware;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\RequestInterface;
 
 /**
- * @covers GuzzleHttp\RedirectMiddleware
+ * @covers RedirectMiddleware
  */
 class RedirectMiddlewareTest extends TestCase
 {
@@ -77,7 +77,7 @@ class RedirectMiddlewareTest extends TestCase
     }
 
     /**
-     * @expectedException \GuzzleHttp\Exception\TooManyRedirectsException
+     * @expectedException \FINDOLOGIC\GuzzleHttp\Exception\TooManyRedirectsException
      * @expectedExceptionMessage Will not follow more than 3 redirects
      */
     public function testLimitsToMaxRedirects()
@@ -97,7 +97,7 @@ class RedirectMiddlewareTest extends TestCase
     }
 
     /**
-     * @expectedException \GuzzleHttp\Exception\BadResponseException
+     * @expectedException \FINDOLOGIC\GuzzleHttp\Exception\BadResponseException
      * @expectedExceptionMessage Redirect URI,
      */
     public function testEnsuresProtocolIsValid()

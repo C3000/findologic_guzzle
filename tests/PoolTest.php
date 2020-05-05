@@ -1,11 +1,11 @@
 <?php
-namespace GuzzleHttp\Tests;
+namespace FINDOLOGIC\GuzzleHttp\Tests;
 
-use GuzzleHttp\Client;
-use GuzzleHttp\Exception\ClientException;
-use GuzzleHttp\Handler\MockHandler;
-use GuzzleHttp\HandlerStack;
-use GuzzleHttp\Pool;
+use FINDOLOGIC\GuzzleHttp\Exception\ClientException;
+use FINDOLOGIC\GuzzleHttp\Handler\MockHandler;
+use FINDOLOGIC\GuzzleHttp\Client;
+use FINDOLOGIC\GuzzleHttp\HandlerStack;
+use FINDOLOGIC\GuzzleHttp\Pool;
 use GuzzleHttp\Promise\Promise;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;

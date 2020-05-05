@@ -1,7 +1,7 @@
 <?php
-namespace GuzzleHttp\Tests\Handler;
+namespace FINDOLOGIC\GuzzleHttp\Tests\Handler;
 
-use GuzzleHttp\Handler\CurlMultiHandler;
+use FINDOLOGIC\GuzzleHttp\Handler\CurlMultiHandler;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
 use GuzzleHttp\Tests\Server;
@@ -43,7 +43,7 @@ class CurlMultiHandlerTest extends TestCase
     }
 
     /**
-     * @expectedException \GuzzleHttp\Exception\ConnectException
+     * @expectedException \FINDOLOGIC\GuzzleHttp\Exception\ConnectException
      * @expectedExceptionMessage cURL error
      */
     public function testCreatesExceptions()

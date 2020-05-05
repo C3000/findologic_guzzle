@@ -1,8 +1,8 @@
 <?php
-namespace GuzzleHttp\Handler;
+namespace FINDOLOGIC\GuzzleHttp\Handler;
 
-use GuzzleHttp\Exception\RequestException;
-use GuzzleHttp\HandlerStack;
+use FINDOLOGIC\GuzzleHttp\Exception\RequestException;
+use FINDOLOGIC\GuzzleHttp\HandlerStack;
 use GuzzleHttp\Promise\PromiseInterface;
 use GuzzleHttp\Promise\RejectedPromise;
 use GuzzleHttp\TransferStats;

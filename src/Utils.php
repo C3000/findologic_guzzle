@@ -1,7 +1,7 @@
 <?php
-namespace GuzzleHttp;
+namespace FINDOLOGIC\GuzzleHttp;
 
-use GuzzleHttp\Exception\InvalidArgumentException;
+use FINDOLOGIC\GuzzleHttp\Exception\InvalidArgumentException;
 use Psr\Http\Message\UriInterface;
 
 final class Utils

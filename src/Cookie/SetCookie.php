@@ -1,5 +1,5 @@
 <?php
-namespace GuzzleHttp\Cookie;
+namespace FINDOLOGIC\GuzzleHttp\Cookie;
 
 /**
  * Set-Cookie object

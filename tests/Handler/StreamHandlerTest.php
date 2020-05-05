@@ -1,8 +1,8 @@
 <?php
-namespace GuzzleHttp\Test\Handler;
+namespace FINDOLOGIC\GuzzleHttp\Test\Handler;
 
-use GuzzleHttp\Exception\ConnectException;
-use GuzzleHttp\Handler\StreamHandler;
+use FINDOLOGIC\GuzzleHttp\Exception\ConnectException;
+use FINDOLOGIC\GuzzleHttp\Handler\StreamHandler;
 use GuzzleHttp\Psr7;
 use GuzzleHttp\Psr7\FnStream;
 use GuzzleHttp\Psr7\Request;
@@ -15,7 +15,7 @@ use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\ResponseInterface;
 
 /**
- * @covers \GuzzleHttp\Handler\StreamHandler
+ * @covers \FINDOLOGIC\GuzzleHttp\Handler\StreamHandler
  */
 class StreamHandlerTest extends TestCase
 {
@@ -51,7 +51,7 @@ class StreamHandlerTest extends TestCase
     }
 
     /**
-     * @expectedException \GuzzleHttp\Exception\RequestException
+     * @expectedException \FINDOLOGIC\GuzzleHttp\Exception\RequestException
      */
     public function testAddsErrorToResponse()
     {
@@ -261,7 +261,7 @@ class StreamHandlerTest extends TestCase
     }
 
     /**
-     * @expectedException \GuzzleHttp\Exception\ConnectException
+     * @expectedException \FINDOLOGIC\GuzzleHttp\Exception\ConnectException
      * @expectedExceptionMessage Connection refused
      */
     public function testAddsProxy()
@@ -298,7 +298,7 @@ class StreamHandlerTest extends TestCase
     }
 
     /**
-     * @expectedException \GuzzleHttp\Exception\RequestException
+     * @expectedException \FINDOLOGIC\GuzzleHttp\Exception\RequestException
      * @expectedExceptionMessage SSL CA bundle not found: /does/not/exist
      */
     public function testVerifiesVerifyIsValidIfPath()
@@ -313,7 +313,7 @@ class StreamHandlerTest extends TestCase
     }
 
     /**
-     * @expectedException \GuzzleHttp\Exception\RequestException
+     * @expectedException \FINDOLOGIC\GuzzleHttp\Exception\RequestException
      * @expectedExceptionMessage SSL certificate not found: /does/not/exist
      */
     public function testVerifiesCertIfValidPath()
@@ -525,7 +525,7 @@ class StreamHandlerTest extends TestCase
     }
 
     /**
-     * @expectedException \GuzzleHttp\Exception\RequestException
+     * @expectedException \FINDOLOGIC\GuzzleHttp\Exception\RequestException
      * @expectedExceptionMessage An error was encountered during the on_headers event
      * @expectedExceptionMessage test
      */

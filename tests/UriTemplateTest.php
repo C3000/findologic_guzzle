@@ -1,11 +1,11 @@
 <?php
-namespace GuzzleHttp\Tests;
+namespace FINDOLOGIC\GuzzleHttp\Tests;
 
-use GuzzleHttp\UriTemplate;
+use FINDOLOGIC\GuzzleHttp\UriTemplate;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers GuzzleHttp\UriTemplate
+ * @covers UriTemplate
  */
 class UriTemplateTest extends TestCase
 {

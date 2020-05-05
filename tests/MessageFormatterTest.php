@@ -1,15 +1,15 @@
 <?php
-namespace GuzzleHttp\Tests;
+namespace FINDOLOGIC\GuzzleHttp\Tests;
 
-use GuzzleHttp\Exception\RequestException;
-use GuzzleHttp\MessageFormatter;
+use FINDOLOGIC\GuzzleHttp\Exception\RequestException;
+use FINDOLOGIC\GuzzleHttp\MessageFormatter;
 use GuzzleHttp\Psr7;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers GuzzleHttp\MessageFormatter
+ * @covers MessageFormatter
  */
 class MessageFormatterTest extends TestCase
 {

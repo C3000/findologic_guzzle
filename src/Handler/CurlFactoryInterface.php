@@ -1,5 +1,5 @@
 <?php
-namespace GuzzleHttp\Handler;
+namespace FINDOLOGIC\GuzzleHttp\Handler;
 
 use Psr\Http\Message\RequestInterface;
 

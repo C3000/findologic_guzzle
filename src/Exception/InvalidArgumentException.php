@@ -1,6 +1,6 @@
 <?php
 
-namespace GuzzleHttp\Exception;
+namespace FINDOLOGIC\GuzzleHttp\Exception;
 
 final class InvalidArgumentException extends \InvalidArgumentException implements GuzzleException
 {

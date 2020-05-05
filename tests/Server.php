@@ -1,7 +1,7 @@
 <?php
-namespace GuzzleHttp\Tests;
+namespace FINDOLOGIC\GuzzleHttp\Tests;
 
-use GuzzleHttp\Client;
+use FINDOLOGIC\GuzzleHttp\Client;
 use GuzzleHttp\Psr7;
 use Psr\Http\Message\ResponseInterface;
 

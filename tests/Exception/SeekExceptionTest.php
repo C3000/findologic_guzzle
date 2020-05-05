@@ -1,7 +1,7 @@
 <?php
-namespace GuzzleHttp\Tests\Exception;
+namespace FINDOLOGIC\GuzzleHttp\Tests\Exception;
 
-use GuzzleHttp\Exception\SeekException;
+use FINDOLOGIC\GuzzleHttp\Exception\SeekException;
 use GuzzleHttp\Psr7;
 use PHPUnit\Framework\TestCase;
 

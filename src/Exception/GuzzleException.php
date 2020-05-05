@@ -1,5 +1,5 @@
 <?php
-namespace GuzzleHttp\Exception;
+namespace FINDOLOGIC\GuzzleHttp\Exception;
 
 use Throwable;
 

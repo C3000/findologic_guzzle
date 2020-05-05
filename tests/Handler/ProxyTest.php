@@ -1,14 +1,14 @@
 <?php
-namespace GuzzleHttp\Test\Handler;
+namespace FINDOLOGIC\GuzzleHttp\Test\Handler;
 
-use GuzzleHttp\Handler\MockHandler;
-use GuzzleHttp\Handler\Proxy;
+use FINDOLOGIC\GuzzleHttp\Handler\MockHandler;
+use FINDOLOGIC\GuzzleHttp\Handler\Proxy;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers \GuzzleHttp\Handler\Proxy
+ * @covers \FINDOLOGIC\GuzzleHttp\Handler\Proxy
  */
 class ProxyTest extends TestCase
 {
