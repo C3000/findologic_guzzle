@@ -1,7 +1,7 @@
 <?php
 namespace FINDOLOGIC\GuzzleHttp\Handler;
 
-use GuzzleHttp\RequestOptions;
+use FINDOLOGIC\GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 
 /**
