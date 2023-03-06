@@ -215,7 +215,7 @@ class RedirectMiddleware
             $modify['remove_headers'][] = 'Authorization';
         }
 
-        return Psr7\modify_request($request, $modify);
+        return Psr7\Utils::modifyRequest($request, $modify);
     }
 
     /**

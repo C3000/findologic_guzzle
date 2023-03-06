@@ -379,7 +379,7 @@ class CurlFactory implements CurlFactoryInterface
         if (isset($options['sink'])) {
             $sink = $options['sink'];
             if (!is_string($sink)) {
-                $sink = \GuzzleHttp\Psr7\stream_for($sink);
+                $sink = \GuzzleHttp\Psr7\Utils::streamFor($sink);
             } elseif (!is_dir(dirname($sink))) {
                 // Ensure that the directory exists before failing in curl.
                 throw new \RuntimeException(sprintf(
@@ -397,7 +397,7 @@ class CurlFactory implements CurlFactoryInterface
         } else {
             // Use a default temp stream if no sink was set.
             $conf[CURLOPT_FILE] = fopen('php://temp', 'w+');
-            $easy->sink = Psr7\stream_for($conf[CURLOPT_FILE]);
+            $easy->sink = Psr7\Utils::streamFor($conf[CURLOPT_FILE]);
         }
         $timeoutRequiresNoSignal = false;
         if (isset($options['timeout'])) {
